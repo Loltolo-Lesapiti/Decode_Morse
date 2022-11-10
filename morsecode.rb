@@ -1,4 +1,4 @@
-# A function that returns the MooseCode objects.
+# A function that returns the MooseCode and the corresponding meaning objects.
 def objects
     codes={    ".-"=>"A","-..."=>"B","-.-."=>"C","-.."=>"D","."=>"E","..-."=>"F","--."=>"G","...."=>"H",".."=>"I",".---"=>"J",
                "-.-"=>"K",".-.."=>"L","--"=>"M","-."=>"N","---"=>"O",".--."=>"P","--.-" => "Q" , ".-."=>"R","..."=>"S","-"=>"T",
