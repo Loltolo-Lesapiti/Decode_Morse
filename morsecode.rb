@@ -14,22 +14,23 @@ print ' Word Code: '
 
 # Decoding a sentense
 def decode_word(word)
+  # rubocop:disable Style/RedundantArgument
   char_array = word.split(' ')
-  char_array.each do|char|
+  char_array.each do |char|
     decod_char(char)
   end
 end
+# rubocop:enable Style/RedundantArgument
 decode_word('-. .- -- .')
 print ' Message Code: '
 
 # Decoding a Message
 def decode_message(message)
   words_array = message.split('   ')
-  words_array.each do|word|
+  words_array.each do |word|
     decode_word(word)
     print ' '
   end
-    
 end
 
 decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
